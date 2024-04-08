@@ -88,6 +88,17 @@ One of the significant challenges encountered during the project implementation 
 ### Scraping Flexibility: Scrapy vs. BeautifulSoup:
 In the process of web scraping, a notable observation was the flexibility offered by Scrapy compared to BeautifulSoup. While BeautifulSoup provides simpler HTML parsing capabilities, Scrapy's framework offers a more structured approach to web crawling and data extraction. However, Scrapy also requires a steeper learning curve compared to BeautifulSoup, which was a challenge initially but proved beneficial in handling more complex scraping tasks.
 
+## Project Structure
+- Atelier: The main directory for the project.
+- spiders: Directory containing Python scripts for Scrapy spiders. The article.py script implements the "article" spider for web scraping.
+- items.py: Defines the data structure for scraped items.
+- middlewares.py: Defines spider and downloader middlewares, although currently unused.
+- pipelines.py: Implements a pipeline for storing scraped data into a MongoDB database.
+- settings.py: Defines project settings such as bot name, allowed domains, and MongoDB connection parameters.
+- notebooks: Directory containing Jupyter notebooks. The ATELIER1.ipynb notebook may contain exploratory data analysis or other project-related tasks.
+- scrapy.cfg: Configuration file for the Scrapy project.
+- README.md: The project's README file, providing an overview, setup instructions, and other relevant information.
+
 ## Conclusion:
 
 Navigating the challenges posed by the scarcity of resources for Arabic language processing and leveraging the flexibility of Scrapy for web scraping were pivotal aspects of the project. By documenting these implementation details, challenges faced, and conclusions drawn from experiments within the project files and commit messages, future references and improvements can be better facilitated.
